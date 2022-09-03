@@ -9,12 +9,9 @@ public class Main2 {
             System.out.println("Enter your name : ");
 
             String a = yourName.next();
-
-            if(yourName.next() == "exit"){
+            System.out.println("hi~ " + a);
+            if(yourName.next().equals("exit") ){
                 break;
-            }
-            else {
-                System.out.println("hi~ " + a);
             }
         }
         System.out.println("종료");
