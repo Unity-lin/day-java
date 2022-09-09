@@ -9,11 +9,25 @@ public class Calculator {
 
         int a = scan.nextInt();
         int b = scan.nextInt();
-        int min = a + b;
+        String c = scan.next();
 
-
-        System.out.println(a + "과" + b + "의 합은" + min + "입니다");
-    
+        switch(c){
+            case "+":
+                System.out.println(a+b);
+                break;
+            case "-":
+                System.out.println(a-b);
+                break;
+            case "*":
+                System.out.println(a*b);
+                break;
+            case "/":
+                System.out.println(a/b);
+                break;
+            default:
+                System.out.println("사칙연산을 잘못입력하셨습니다");
+                break;
+        }
     }
 
 
