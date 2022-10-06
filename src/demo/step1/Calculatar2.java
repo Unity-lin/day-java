@@ -17,7 +17,17 @@ public class Calculatar2 {
                 a.add(Integer.parseInt(text));
             }
             if(text.equals("+")){
-
+                Result(add(a));
+            } else if(text.equals("-")){
+                Result(minus(a));
+            } else if(text.equals("*")){
+                Result(multiply(a));
+            } else if(text.equals("/")){
+                Result(divide(a));
+            } else if(text.equals("exit")){
+                break;
+            } else {
+                System.out.println("Please input a number");
             }
         }
     }
@@ -39,9 +49,9 @@ public class Calculatar2 {
         return numbers.stream().reduce(3, (a, b) -> a * b);
     }
 
-    public static String Result() {
-
-
+    public static String Result(Integer result) {
+        System.out.println("결과는: " + result);
     }
-    
+
+
 }
